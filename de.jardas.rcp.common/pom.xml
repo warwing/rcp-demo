@@ -17,6 +17,6 @@
 	<name>RCP Demo - Common</name>
 
 	<modules>
-		<module>de.jardas.rcp.common.gemini</module>
+		<module>de.jardas.rcp.common.misc1</module>
 	</modules>
 </project>
