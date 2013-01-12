@@ -18,6 +18,7 @@
 
 	<modules>
 		<module>de.jardas.rcp.client.application</module>
+		<module>de.jardas.rcp.client.feature</module>
 	</modules>
 
 </project>
