@@ -89,4 +89,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<modules>
+		<module>../de.jardas.rcp.target</module>
+		<module>../de.jardas.rcp.common</module>
+		<module>../de.jardas.rcp.module1</module>
+		<module>../de.jardas.rcp.server</module>
+		<module>../de.jardas.rcp.client</module>
+	</modules>
 </project>
