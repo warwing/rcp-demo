@@ -7,3 +7,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Vendor: Philipp Jardas
 Export-Package: de.jardas.rcp.module1.api
 Bundle-ActivationPolicy: lazy
+Import-Package: de.jardas.rcp.common.misc1

@@ -18,5 +18,6 @@
 
 	<modules>
 		<module>de.jardas.rcp.module1.api</module>
+		<module>de.jardas.rcp.module1.server</module>
 	</modules>
 </project>
