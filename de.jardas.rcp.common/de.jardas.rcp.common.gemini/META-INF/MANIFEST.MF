@@ -3,9 +3,10 @@ Bundle-ManifestVersion: 2
 Bundle-Name: RCP Demo - Common - Gemini
 Bundle-SymbolicName: de.jardas.rcp.common.gemini;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.swt;bundle-version="3.6.0",
- org.eclipse.ui;bundle-version="3.6.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Vendor: Philipp Jardas
+Export-Package: de.jardas.rcp.common.gemini
+Import-Package: org.osgi.framework,
+ org.osgi.util.tracker
+Bundle-Activator: de.jardas.rcp.common.gemini.Activator

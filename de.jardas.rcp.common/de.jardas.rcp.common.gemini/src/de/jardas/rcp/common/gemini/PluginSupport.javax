@@ -1,0 +1,78 @@
+package de.jardas.rcp.common.gemini;
+
+import org.osgi.framework.BundleContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
+
+public class PluginSupport {
+	private static final Logger LOG = LoggerFactory.getLogger(PluginSupport.class);
+	private static final int APPLICATION_CONTEXT_TIMEOUT = 5000;
+	private BundleContext bundleContext;
+	private ApplicationContextTracker applicationContextTracker;
+	private ApplicationContext applicationContext;
+
+	public void start(final BundleContext context) {
+		bundleContext = context;
+		applicationContextTracker = new ApplicationContextTracker(
+				bundleContext.getBundle(), bundleContext);
+	}
+
+	public void stop(final BundleContext context) {
+		bundleContext = null;
+		applicationContext = null;
+
+		if (applicationContextTracker != null) {
+			applicationContextTracker.close();
+		}
+	}
+
+	public BundleContext getBundleContext() {
+		return bundleContext;
+	}
+
+	public ApplicationContext getApplicationContext() {
+		if (applicationContext != null) {
+			return applicationContext;
+		}
+
+		if (applicationContextTracker == null) {
+			throw new IllegalStateException("Plugin was already shutdown!");
+		}
+
+		synchronized (applicationContextTracker) {
+			if (applicationContext == null) {
+				LOG.debug(
+						"Waiting for application context initialization up to {} ms...",
+						APPLICATION_CONTEXT_TIMEOUT);
+				applicationContext = applicationContextTracker
+						.getApplicationContext(APPLICATION_CONTEXT_TIMEOUT);
+
+				if (applicationContext == null) {
+					throw new IllegalStateException(
+							String.format(
+									"Timeout (%d ms) while waiting for application context.",
+									APPLICATION_CONTEXT_TIMEOUT));
+				}
+			}
+		}
+
+		if (applicationContext == null) {
+			throw new IllegalStateException(
+					"Error initializing application context!");
+		}
+
+		return applicationContext;
+	}
+
+	public void autowire(final Object obj) {
+		if (obj != null) {
+			getApplicationContext().getAutowireCapableBeanFactory()
+					.autowireBean(obj);
+		}
+	}
+
+	public String getPluginID() {
+		return bundleContext.getBundle().getSymbolicName();
+	}
+}
