@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>de.jardas.rcp.client</groupId>
-		<artifactId>de.jardas.rcp.client</artifactId>
+		<groupId>de.jardas.rcp.module1</groupId>
+		<artifactId>de.jardas.rcp.module1</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
