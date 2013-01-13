@@ -19,5 +19,17 @@
             id="de.jardas.rcp.client.application.perspective">
       </perspective>
    </extension>
+   <extension
+         id="de.jardas.rcp.client.application.product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="de.jardas.rcp.client.application.application"
+            name="RCP Demo">
+         <property
+               name="windowImages"
+               value="icons/alt_window_16.gif,icons/alt_window_32.gif">
+         </property>
+      </product>
+   </extension>
 
 </plugin>

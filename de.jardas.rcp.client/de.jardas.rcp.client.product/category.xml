@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/de.jardas.rcp.client.feature_1.0.0.qualifier.jar" id="de.jardas.rcp.client.feature" version="1.0.0.qualifier">
+      <category name="de.jardas.rcp"/>
+   </feature>
+   <feature url="features/de.jardas.rcp.module1.client.feature_1.0.0.qualifier.jar" id="de.jardas.rcp.module1.client.feature" version="1.0.0.qualifier">
+      <category name="de.jardas.rcp"/>
+   </feature>
+   <category-def name="de.jardas.rcp" label="RCP Demo"/>
+</site>

@@ -5,10 +5,6 @@
       version="1.0.0.qualifier"
       provider-name="Philipp Jardas">
 
-   <includes
-         id="de.jardas.rcp.module1.client.feature"
-         version="0.0.0"/>
-
    <plugin
          id="de.jardas.rcp.client.application"
          download-size="0"
