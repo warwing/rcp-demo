@@ -18,7 +18,7 @@ Project Structure
   * API
   * Server
   * Client
-    * Feature - The API and Client implementation are packaged in an Eclipse feature.
+  * Feature - The API and Client implementation are packaged in an Eclipse feature.
 * Server - currently only a WAR aggregating all modules' server components.
 * Client - a vanilla RCP application.
   * Feature - the client feature that contains only the application itself, not the modules.

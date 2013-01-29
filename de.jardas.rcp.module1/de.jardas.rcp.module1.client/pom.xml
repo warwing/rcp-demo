@@ -15,8 +15,4 @@
 
 	<name>RCP Demo - Module 1 - Client</name>
 
-	<modules>
-		<module>de.jardas.rcp.module1.client.feature</module>
-	</modules>
-
 </project>
