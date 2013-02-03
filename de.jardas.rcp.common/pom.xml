@@ -11,12 +11,13 @@
 
 	<groupId>de.jardas.rcp.common</groupId>
 	<artifactId>de.jardas.rcp.common</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>RCP Demo - Common</name>
 
 	<modules>
+		<module>de.jardas.rcp.common.externals</module>
 		<module>de.jardas.rcp.common.misc1</module>
 	</modules>
 </project>
