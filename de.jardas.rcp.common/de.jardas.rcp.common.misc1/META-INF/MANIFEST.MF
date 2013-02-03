@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: RCP Demo - Common - Misc 1
-Bundle-SymbolicName: de.jardas.rcp.common.misc1
-Bundle-Version: 1.0.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Bundle-Vendor: Philipp Jardas
-Export-Package: de.jardas.rcp.common.misc1
