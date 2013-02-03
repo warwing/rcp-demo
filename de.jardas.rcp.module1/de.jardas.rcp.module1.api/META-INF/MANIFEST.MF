@@ -2,9 +2,10 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: RCP Demo - Module 1 - API
 Bundle-SymbolicName: de.jardas.rcp.module1.api;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.0.SNAPSHOT
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Vendor: Philipp Jardas
 Export-Package: de.jardas.rcp.module1.api;uses:="de.jardas.rcp.common.misc1"
 Bundle-ActivationPolicy: lazy
 Import-Package: de.jardas.rcp.common.misc1
+Bundle-ClassPath: .
