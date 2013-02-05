@@ -15,7 +15,7 @@
 	<packaging>bundle</packaging>
 
 	<properties>
-		<manifest-location>target/classes/META-INF</manifest-location>
+		<manifest-location>target/bundle/META-INF</manifest-location>
 	</properties>
 
 	<dependencies>
