@@ -19,7 +19,17 @@
 	<modules>
 		<module>de.jardas.rcp.module1.api</module>
 		<module>de.jardas.rcp.module1.client</module>
+<!-- 		<module>de.jardas.rcp.module1.client.test</module> -->
 		<module>de.jardas.rcp.module1.client.feature</module>
 		<module>de.jardas.rcp.module1.server</module>
 	</modules>
+
+	<dependencies>
+		<dependency>
+			<groupId>de.jardas.rcp.common</groupId>
+			<artifactId>de.jardas.rcp.common.misc1</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<type>bundle</type>
+		</dependency>
+	</dependencies>
 </project>
