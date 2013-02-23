@@ -5,21 +5,20 @@
 
 	<parent>
 		<groupId>de.jardas.rcp</groupId>
-		<artifactId>de.jardas.rcp.parent</artifactId>
+		<artifactId>de.jardas.rcp.server.parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<groupId>de.jardas.rcp</groupId>
-	<artifactId>de.jardas.rcp.server.parent</artifactId>
+	<groupId>de.jardas.rcp.common</groupId>
+	<artifactId>de.jardas.rcp.common.server.parent</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>RCP Demo Parent</name>
+	<name>RCP Demo - Common</name>
 
 	<modules>
-		<module>rcp.server.common</module>
-		<module>rcp.server.module1</module>
-		<module>de.jardas.rcp.server</module>
+		<module>de.jardas.rcp.common.externals</module>
+		<module>de.jardas.rcp.common.misc1</module>
 	</modules>
 	
 	<build>

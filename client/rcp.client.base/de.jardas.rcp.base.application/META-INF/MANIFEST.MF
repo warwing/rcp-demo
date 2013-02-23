@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RCP Demo - Client - Application
+Bundle-SymbolicName: de.jardas.rcp.base.application;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Philipp Jardas
+Require-Bundle: org.eclipse.core.runtime;visibility:=reexport,
+ org.eclipse.ui;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: de.jardas.rcp.common.misc1;version="1.0.0.SNAPSHOT"
+Bundle-ClassPath: .

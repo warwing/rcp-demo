@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: de.jardas.rcp.module1.client.test
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.junit4;bundle-version="[4.8,5)",org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: de.jardas.rcp.module1.client.services;version="[1.0,2)"

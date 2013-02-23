@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: RCP Demo - Client - Feature
-Bundle-SymbolicName: de.jardas.rcp.client.feature;singleton:=true
-Bundle-Version: 1.0.0.SNAPSHOT
-Bundle-ClassPath: .

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="de.jardas.rcp.module1.client.feature"
+      label="RCP Demo - Module 1 - Client Feature"
+      version="1.0.0.qualifier"
+      provider-name="Philipp Jardas">
+
+	<plugin
+         id="de.jardas.rcp.base.application"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+	<plugin
+         id="de.jardas.rcp.module1.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.jardas.rcp.common.misc1"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

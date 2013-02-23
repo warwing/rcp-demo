@@ -5,21 +5,21 @@
 
 	<parent>
 		<groupId>de.jardas.rcp</groupId>
-		<artifactId>de.jardas.rcp.parent</artifactId>
+		<artifactId>de.jardas.rcp.client.parent</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<groupId>de.jardas.rcp</groupId>
-	<artifactId>de.jardas.rcp.server.parent</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<groupId>de.jardas.rcp.module1</groupId>
+	<artifactId>de.jardas.rcp.module1.client.parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>RCP Demo Parent</name>
+	<name>RCP Demo - Module 1</name>
 
 	<modules>
-		<module>rcp.server.common</module>
-		<module>rcp.server.module1</module>
-		<module>de.jardas.rcp.server</module>
+		<module>de.jardas.rcp.module1.client</module>
+		<module>de.jardas.rcp.module1.client.feature</module>
+<!-- 		<module>de.jardas.rcp.module1.client.test</module> -->
 	</modules>
 	
 	<build>

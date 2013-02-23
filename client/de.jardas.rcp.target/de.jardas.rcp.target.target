@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="de.jardas.rcp.target" sequenceNumber="6">
+<?pde version="3.8"?><target name="de.jardas.rcp.target" sequenceNumber="22">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.rcp.feature.group" version="3.7.2.v20120120-1424-9DB5FmnFq5JCf1UA38R-kz0S0272"/>
-<unit id="org.eclipse.nebula.widgets.datechooser.feature.feature.group" version="1.0.0.201301250959"/>
-<unit id="org.eclipse.nebula.widgets.formattedtext.feature.feature.group" version="1.0.0.201301250959"/>
 <unit id="org.eclipse.nebula.widgets.tablecombo.feature.feature.group" version="1.0.0.201302061436"/>
-<repository location="http://buildsupport/eclipse/mirror/"/>
+<unit id="org.eclipse.nebula.widgets.formattedtext.feature.feature.group" version="1.0.0.201301250959"/>
+<unit id="org.eclipse.nebula.widgets.datechooser.feature.feature.group" version="1.0.0.201301250959"/>
+<unit id="org.eclipse.babel.nls_eclipse_de.feature.group" version="3.7.0.v20121120090237"/>
+<repository location="http://buildsupport/eclipse/mirror/indigo/"/>
 </location>
-<location path="${project_loc}/lib" type="Directory"/>
 </locations>
+<environment>
+<os>win32</os>
+<ws>win32</ws>
+<arch>x86</arch>
+</environment>
+<targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+<launcherArgs>
+<vmArgs>-Djava.net.preferIPv4Stack=true</vmArgs>
+</launcherArgs>
 </target>

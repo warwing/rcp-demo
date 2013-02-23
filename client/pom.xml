@@ -16,6 +16,13 @@
 	<packaging>pom</packaging>
 
 	<name>RCP Demo Client Parent</name>
+	
+	<modules>
+		<module>de.jardas.rcp.target</module>
+		<module>rcp.client.base</module>
+		<module>rcp.client.module1</module>
+		<module>de.jardas.rcp.product</module>
+	</modules>
 
 	<dependencies>
 		<dependency>
@@ -37,6 +44,15 @@
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<skip />
+				</configuration>
+			</plugin>
+			
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-maven-plugin</artifactId>
@@ -124,10 +140,4 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-
-	<modules>
-		<module>de.jardas.rcp.target</module>
-		<module>de.jardas.rcp.client</module>
-		<module>de.jardas.rcp.module1</module>
-	</modules>
 </project>
