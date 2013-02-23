@@ -13,4 +13,24 @@
 	<name>RCP Demo - Module 1 - Client - Test</name>
 	<packaging>eclipse-test-plugin</packaging>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.junit</groupId>
+			<artifactId>org.junit</artifactId>
+			<version>4.8.2</version>
+			<classifier>eclipse-bundle</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.junit</groupId>
+			<artifactId>org.junit4</artifactId>
+			<version>4.8.1</version>
+			<classifier>eclipse-bundle</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>org.hamcrest.core</artifactId>
+			<version>1.1.0</version>
+			<classifier>eclipse-bundle</classifier>
+		</dependency>
+	</dependencies>
 </project>

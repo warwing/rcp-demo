@@ -14,12 +14,12 @@
 	<packaging>eclipse-plugin</packaging>
 
 	<name>RCP Demo - Module 1 - Client</name>
-	
+
 	<build>
-	<resources>
-      <resource>
-        <directory>src</directory>
-      </resource>
-    </resources>
+		<resources>
+			<resource>
+				<directory>src</directory>
+			</resource>
+		</resources>
 	</build>
 </project>
