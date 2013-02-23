@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.5+" version="${unqualifiedVersion}.${buildQualifier}" codebase="https://www.example.com/path/to/jws/root/">
+	<information>
+		<title>${project.name}</title>
+		<vendor>${project.organization.name}</vendor>
+		<offline-allowed />
+	</information>
+	<security>
+		<all-permissions />
+	</security>
+
+	<!-- The special web start launcher -->
+	<application-desc main-class="org.eclipse.equinox.launcher.WebStartMain">
+		<argument>-nosplash</argument>
+	</application-desc>
+
+	<component-desc />
+	<resources>
+		<j2se version="1.6+" />
+		<!-- Your product and application identifiers -->
+		<property name="eclipse.product" value="com.example.webstart.product" />
+		<property name="eclipse.application" value="com.example.webstart.application" />
+
+		<proprty name="osgi.framework.extensions" value="=org.eclipse.equinox.weaving.hook" />
+		<proprty name="osgi.framework" value="org.eclipse.osgi" />
+
+		<!-- Specify bundle start levels -->
+		<property name="osgi.bundles"
+			value="org.eclipse.core.runtime@start,org.eclipse.equinox.ds@start" />
+		<property name="osgi.bundles.defaultStartLevel" value="4" />
+
+		<property name="equinox.use.ds" value="true" />
+
+		<property name="org.eclipse.update.install.features" value="true" />
+
+		<!-- Where to store application workspace and instance data -->
+		<property name="osgi.instance.area.default" value="@user.home/.webstartApplication/workspace" />
+		<property name="osgi.configuration.area" value="@user.home/.webstartApplication/configuration/" />
+		<property name="eclipse.p2.data.area" value="@user.home/.webstartAppliction/p2" />
+		<property name="eclipse.p2.profile" value="DefaultProfile" />
+
+	</resources>
+
+</jnlp>
