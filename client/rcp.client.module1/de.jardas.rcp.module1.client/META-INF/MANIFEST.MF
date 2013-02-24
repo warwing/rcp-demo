@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: RCP Demo - Module 1 - Client
 Bundle-SymbolicName: de.jardas.rcp.module1.client;singleton:=true
-Bundle-Version: 1.0.0.SNAPSHOT
+Bundle-Version: 1.0.0.qualifier
 Export-Package: de.jardas.rcp.module1.client.pub;version="1.0.0.qualifier",
  de.jardas.rcp.module1.client.services;version="1.0.0.qualifier" 
 Import-Package: de.jardas.rcp.common.misc1;version="[1.0,2)",
