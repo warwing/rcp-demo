@@ -127,6 +127,9 @@
 										<goals>
 											<goal>build-qualifier</goal>
 											<goal>validate-id</goal>
+											<goal>
+												build-qualifier-aggregator
+											</goal>
 										</goals>
 									</pluginExecutionFilter>
 									<action>

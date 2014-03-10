@@ -4,7 +4,6 @@
   <classpathentry kind="output" path="target/classes"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-  <classpathentry kind="lib" path="D:/Tools/maven/repository/de/jardas/rcp/base/de.jardas.rcp.base.application/1.0.0-SNAPSHOT/de.jardas.rcp.base.application-1.0.0-SNAPSHOT.jar"/>
   <classpathentry kind="lib" path="D:/Tools/maven/repository/p2/osgi/bundle/org.eclipse.core.runtime/3.7.0.v20110110/org.eclipse.core.runtime-3.7.0.v20110110.jar"/>
   <classpathentry kind="lib" path="D:/Tools/maven/repository/p2/osgi/bundle/org.eclipse.ui/3.7.0.v20110928-1505/org.eclipse.ui-3.7.0.v20110928-1505.jar"/>
   <classpathentry kind="lib" path="D:/Tools/maven/repository/de/jardas/rcp/common/de.jardas.rcp.common.misc1/1.0.0-SNAPSHOT/de.jardas.rcp.common.misc1-1.0.0-SNAPSHOT.jar"/>

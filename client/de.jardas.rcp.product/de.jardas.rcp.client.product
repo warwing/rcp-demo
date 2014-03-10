@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="RCP Demo Product" uid="de.jardas.rcp.client.product" id="de.jardas.rcp.client.application.product" application="example-bundle.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="false">
+<product name="RCP Demo Product" uid="de.jardas.rcp.client.product" id="de.jardas.rcp.client.application.product" application="de.jardas.rcp.base.application.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="false">
 
    <configIni use="default">
    </configIni>

@@ -51,13 +51,16 @@
 				<configuration>
 					<jnlpFile>${project.build.directory}/repository/OutputFilename.jnlp</jnlpFile>
 					<target>${project.build.directory}/repository/</target>
+					<alias>tntinnight</alias>
+					<keystore>${basedir}/keystore</keystore>
+					<storepass>tntinnight</storepass>
 					<skip>false</skip>
 				</configuration>
 				<executions>
 					<execution>
 						<goals>
 							<goal>jnlp-file</goal>
-							<!-- <goal>sign-jars</goal> -->
+							<goal>sign-jars</goal>
 						</goals>
 					</execution>
 				</executions>
