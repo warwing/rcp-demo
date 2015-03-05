@@ -4,11 +4,31 @@
    <extension
          point="org.eclipse.ui.views">
       <view
-            class="de.jardas.rcp.module1.client.SampleView"
-            id="de.jardas.rcp.module1.client.SampleView"
+            class="de.jardas.rcp.module1.client.ui.SampleView"
+            id="de.jardas.rcp.module1.client.ui.SampleView"
             name="SampleView"
             restorable="false">
       </view>
    </extension>
+   
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="de.tnt.innight.client.ui.menus.main.zeus"
+               label="SampleView">
+            <command
+                  commandId="org.eclipse.ui.views.showView"
+                  label="Show"
+                  style="push">
+               <parameter
+                     name="org.eclipse.ui.views.showView.viewId"
+                     value="de.jardas.rcp.module1.client.ui.SampleView">
+               </parameter>
+            </command>
+        </menu>
+    </menuContribution>
+    </extension>
 
 </plugin>

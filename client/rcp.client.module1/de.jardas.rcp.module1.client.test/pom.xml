@@ -33,4 +33,5 @@
 			<classifier>eclipse-bundle</classifier>
 		</dependency>
 	</dependencies>
+	
 </project>

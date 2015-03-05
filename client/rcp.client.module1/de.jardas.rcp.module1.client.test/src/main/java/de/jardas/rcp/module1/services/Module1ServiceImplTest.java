@@ -8,7 +8,7 @@ public class Module1ServiceImplTest {
 
 	private SharedClientInterface clientService;
 
-	@Test
+	@Test(expected=NullPointerException.class)
 	public void basic() {
 		clientService.doSomething();
 	}
